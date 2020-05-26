@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: black;
+  font-size: 32px;
+}
+.carousel {
+  border: 1px solid white;
+}
+
+.row {
+  padding: 60px;
+  background-color: white;
+}
+
+/*.slider-img-tanya {
+  background: url(./images/pattern-bg.svg) no-repeat center;
+  background-size: contain;
+  height: 1rem;
+}*/
+
+.slider-img-tanya {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.img-tanya {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  z-index: 2;
+}
+
+.bg-img {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.container {
+  margin: 5rem auto;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
