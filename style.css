@@ -2,49 +2,153 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: 'Inter', sans-serif;
-  background-color: black;
   font-size: 32px;
+  overflow-y: hidden;
 }
-.carousel {
-  border: 1px solid white;
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item .row {
+  height: 100%;
+  width: 100%;
+  padding-top: 53px;
+  padding-bottom: 77px;
+  padding-right: 68px;
+  padding-left: 90px;
 }
 
 .row {
   padding: 60px;
-  background-color: white;
 }
 
-/*.slider-img-tanya {
-  background: url(./images/pattern-bg.svg) no-repeat center;
-  background-size: contain;
-  height: 1rem;
-}*/
+.text {
+  padding-top: 75px;
+  padding-left: 0px;
+  margin-right: -20px;
+}
+.text-body {
+  font-weight: 300;
+  font-size: 25px;
+  position: relative;
+  text-align: left;
+  z-index: 2;
+}
 
-.slider-img-tanya {
+#text-pattern {
+  height: 66px;
+  width: 95px;
+  z-index: 1;
+  position: relative;
+  z-index: 1;
+  left: 80px;
+  top: 25px;
+}
+
+.text-name {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.text-designation {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.slider-image {
   position: relative;
   top: 0;
   left: 0;
 }
 
-.img-tanya {
+#img-tanya {
+  height: 85%;
+  width: 85%;
+}
+
+#img-john {
+  height: 85%;
+  width: 85%;
+}
+
+.image {
   position: absolute;
   top: 36px;
   left: 0;
   z-index: 2;
+  box-shadow: 0px 30px 26px -11px rgba(0, 0, 0, 0.2);
+}
+
+#bg-img-tanya {
+  height: 102%;
+}
+
+#bg-img-john {
+  height: 102%;
 }
 
 .bg-img {
   position: relative;
   bottom: 0;
   right: 0;
+  top: -13px;
   z-index: 1;
 }
-.container {
-  margin: 5rem auto;
+
+.carousel-inner {
+  height: 100%;
 }
+
+#carouselExampleInterval {
+  width: 1152px;
+  height: 640px;
+}
+
+.container {
+  margin: 3rem 10.5rem;
+  width: 1152px;
+  height: 640px;
+}
+
 .carousel-inner img {
   width: 100%;
   height: 100%;
+}
+
+.carousel-control {
+  position: absolute;
+  z-index: 3;
+  right: 26.5rem;
+  bottom: 6rem;
+  background: #fff;
+  border-radius: 2rem;
+  border: 1px solid white;
+  width: 5rem;
+  height: 2.5rem;
+}
+
+.carousel-control-prev {
+  position: relative;
+  left: 13px;
+  top: 10px;
+}
+
+.carousel-control-next {
+  position: relative;
+  left: 53px;
+  top: -6px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(./images/icon-prev.svg);
+  height: 1rem;
+}
+
+.carousel-control-next-icon {
+  background-image: url(./images/icon-next.svg);
+  height: 18px;
 }
