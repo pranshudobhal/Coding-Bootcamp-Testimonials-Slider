@@ -39,7 +39,17 @@ body {
   z-index: 2;
 }
 
-#text-pattern {
+#text-pattern-john {
+  height: 66px;
+  width: 95px;
+  z-index: 1;
+  position: relative;
+  z-index: 1;
+  left: 80px;
+  top: 25px;
+}
+
+#text-pattern-tanya {
   height: 66px;
   width: 95px;
   z-index: 1;
@@ -199,7 +209,16 @@ body {
     margin-right: 0px;
   }
 
-  #text-pattern {
+  #text-pattern-john {
+    height: 40px;
+    width: 55px;
+    position: relative;
+    z-index: 1;
+    left: 145px;
+    top: 25px;
+  }
+
+  #text-pattern-tanya {
     height: 40px;
     width: 55px;
     position: relative;
