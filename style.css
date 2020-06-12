@@ -140,7 +140,7 @@ body {
 .carousel-control-next {
   position: relative;
   left: 53px;
-  top: -6px;
+  top: -6.5px;
 }
 
 .carousel-control-prev-icon {
@@ -151,4 +151,138 @@ body {
 .carousel-control-next-icon {
   background-image: url(./images/icon-next.svg);
   height: 18px;
+}
+
+@media only screen and (max-width: 575px) {
+  .container {
+    margin: 0px auto;
+    padding: 0px;
+    width: 375px;
+    height: 100%;
+    overflow: auto;
+  }
+
+  #carouselExampleInterval {
+    width: 375px;
+    height: 100%;
+  }
+
+  .carousel-inner {
+    height: 100%;
+    width: 375px;
+  }
+
+  .carousel-item {
+    width: 375px;
+    height: 100%;
+  }
+
+  .carousel-item .row {
+    height: 100%;
+    width: 375px;
+    padding: 0px;
+    display: flex;
+    margin-left: 0px;
+  }
+
+  .slider-image {
+    order: 1;
+  }
+
+  .slider-text {
+    order: 2;
+    margin-top: -5px;
+  }
+
+  .text {
+    padding: 0px;
+    margin-right: 0px;
+  }
+
+  #text-pattern {
+    height: 40px;
+    width: 55px;
+    position: relative;
+    z-index: 1;
+    left: 145px;
+    top: 25px;
+  }
+
+  .text-body {
+    font-weight: 300;
+    font-size: 17px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .text-bottom {
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+
+  .text-name {
+    font-weight: 700;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+  }
+
+  .text-designation {
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .image {
+    position: absolute;
+    top: 45px;
+    left: 70px;
+    z-index: 2;
+    box-shadow: 0px 30px 26px -11px rgba(0, 0, 0, 0.2);
+  }
+
+  #img-tanya {
+    height: 75%;
+    width: 65%;
+  }
+
+  #img-john {
+    height: 75%;
+    width: 65%;
+  }
+
+  .bg-img {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    top: 16px;
+    z-index: 1;
+  }
+
+  #bg-img-tanya {
+    height: 91%;
+    width: 335px;
+  }
+
+  #bg-img-john {
+    height: 91%;
+    width: 335px;
+  }
+
+  .carousel-control {
+    position: absolute;
+    z-index: 3;
+    right: 9.5rem;
+    bottom: 16.5rem;
+    background: #fff;
+    border-radius: 2rem;
+    border: 1px solid white;
+    width: 5rem;
+    height: 2.5rem;
+  }
 }
